@@ -1,0 +1,14 @@
+<% provide(:title, "Load Users") %>
+
+<h2>Load User File</h2>
+
+<div class="row">
+  <div class="center">
+    <%= form_for :upload do |f| %>
+      <br/>
+      <%= f.file_field :fname %>
+      <br/>
+      <%= f.submit "Load Users", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div> 

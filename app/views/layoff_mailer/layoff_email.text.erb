@@ -1,0 +1,5 @@
+Hello <%= "#{@user.first_name} #{@user.last_name}"%>, It's time to fire your coworkers!
+    
+To participate in the process, please go to <%= link_to "Fire Your Coworkers", root_path %> and enter your secret key: <%= @user.secret_key %> or click on <%= link_to "this link", vote_path.concat("?key=#{@user.secret_key}") %> for automatic access.
+
+Thank you for your participation, and may the odds be ever in your favor!
